@@ -1,0 +1,127 @@
+@import '~iview/src/styles/index.less';
+@primary-color: #ff304a;
+@bgcolor: #f2f2f1;
+@hovercolor:#ce1515;
+
+.role-users{
+  background: #fff;
+
+  /*面包屑导航*/
+  .crumbs-bg{
+    width: 100%;
+    background: #f7f7f7;
+    overflow: hidden;
+  }
+  .crumbs-center {
+    line-height: 50px;
+    font-size: 14px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+    margin-left: 20px;
+  }
+  .role-users-con{
+    padding:30px 40px;
+    .operation-row{
+      margin-bottom: 20px;
+      line-height: 30px;
+      >.ivu-col:nth-child(1){
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .role-name{
+        font-size: 15px;
+        font-weight: bold;
+        color: #000000;
+      }
+    }
+    .users-num{
+      line-height: 30px;
+      text-align: right;
+      padding-right: 40px;
+      .red-alert{
+        color: @primary-color;
+      }
+    }
+    .users-page{
+      margin-top: 20px;
+      padding-bottom: 50px;
+      .ivu-page-item-active{
+        background: @primary-color;
+      }
+    }
+  }
+  .role-authorizations-con{
+    padding:30px 40px;
+    .operation-row{
+      margin-bottom: 20px;
+      line-height: 30px;
+      .role-name{
+        font-size: 15px;
+        font-weight: bold;
+        color: #000000;
+      }
+    }
+    .users-num{
+      line-height: 30px;
+      text-align: right;
+      padding-right: 40px;
+      .red-alert{
+        color: @primary-color;
+      }
+    }
+    .users-page{
+      margin-top: 20px;
+      padding-bottom: 50px;
+      .ivu-page-item-active{
+        background: @primary-color;
+      }
+    }
+  }
+}
+/*用户授权Model*/
+.slot-header{
+  display: inline-block;
+  p.role-authorizations-title{
+    float: left;
+    width: 100px;
+    padding-right: 6px;
+    .red-alert{color: @primary-color;}
+  }
+  p.alert-txt{
+    float: left;
+    color: @primary-color;
+    width: 260px;
+  }
+}
+#authOption{
+  .ivu-checkbox-wrapper{
+    padding: 5px 0px;
+    width: 110px;
+    padding-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+  }
+  .ivu-checkbox-wrapper-checked
+  {
+    border: 1px solid @primary-color;
+    color: @primary-color;
+    border-radius: 4px;
+  }
+}
+/*按钮颜色初始化*/
+.ivu-btn:hover {
+  color: @primary-color;
+  background-color: #fff;
+  border-color: @primary-color;
+}
+.ivu-btn-primary{
+  color: #fff;
+  background-color: @primary-color;
+  border-color: @primary-color;
+}
+

@@ -1,0 +1,20 @@
+{
+    "total": 2,
+    "rows": [
+        {
+            "id": "002",
+            "available": 1,
+            "createTime": "2017-09-10 12:09:09",
+            "updateTime": "2017-09-11 12:09:09",
+            "name": "云服务器（中信专有云）",
+            "supplierId": "a001",
+            "address": "北京市海淀区上地三街10号",
+            "serviceType": "弹性计算",
+            "serviceStatus": "正常",
+            "renew": 0,
+            "change": 0,
+            "release": 1,
+            "manage": 1
+        }
+    ]
+}

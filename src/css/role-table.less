@@ -1,0 +1,66 @@
+@import '~iview/src/styles/index.less';
+@primary-color: #ff304a;
+@bgcolor: #f2f2f1;
+@hovercolor:#ce1515;
+/*面包屑导航*/
+.crumbs-bg{
+  width: 100%;
+  background: #f7f7f7;
+  overflow: hidden;
+}
+.crumbs-center {
+  line-height: 50px;
+  font-size: 14px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: block;
+  margin-left: 20px;
+}
+.role-table{
+  background: #fff;
+  .role-table-con{
+    padding:30px 40px;
+  }
+}
+#tabledata{
+  margin: 0px auto 20px;
+  .add-role-btn{
+    background: @primary-color;
+  }
+}
+.table-operation{
+  text-align: left;
+  background: #ccc;
+  position: relative;
+  .ivu-table-cell{
+    text-align: left;
+    padding-left: 20px;
+  }
+  button{
+    margin-right:4px;
+    margin-bottom: 2px;
+  }
+  .first-btn{
+    position: relative;
+    left:40px
+  }
+  .inuse-btn{
+    background: @primary-color;
+  }
+}
+#noticeModal .ivu-modal-footer{
+  padding:0;
+  border-top:none;
+}
+
+/*按钮颜色初始化*/
+.ivu-btn:hover {
+  color: @primary-color;
+  background-color: #fff;
+  border-color: @primary-color;
+}
+.ivu-btn-primary{
+  color: #fff;
+  background-color: @primary-color;
+  border-color: @primary-color;
+}

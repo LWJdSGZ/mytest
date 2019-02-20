@@ -1,0 +1,143 @@
+@import '~iview/src/styles/index.less';
+@primary-color: #ff304a;
+@bgcolor: #f2f2f1;
+@hovercolor:#ce1515;
+@images: "../assets/img";
+
+.toggle-icon{
+  display: none;
+  width: 40px;
+  height: 20px;
+  margin-bottom: 10px;
+  float: right;
+  text-align: right;
+  &:after{
+    content: "\F104";
+    box-sizing: border-box;
+    font-size: 18px;
+  }
+}
+.toggle-icon-after{
+  width: 40px;
+  height: 20px;
+  margin-bottom: 10px;
+  display: block;
+  float: right;
+  text-align: right;
+  &:after{
+    content: "\F10D";
+    box-sizing: border-box;
+    font-size: 18px;
+  }
+}
+.img-con{
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+#comment-con{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+
+  .ivu-icon-funnel:before {
+    content: "\F104";
+  }
+  .ivu-badge-count{
+    min-width: 10px;
+    font-size: 10px;
+    height:20px;
+    position: absolute;
+    right: -20px;
+    top: -22px;
+  }
+  .comment-rule{
+    position: absolute;
+    right: 18px;
+    top: 20px;
+    font-size: 14px;
+    color: @primary-color;
+    z-index: 100;
+  }
+  #noticeModal .ivu-modal-footer{
+    padding:0;
+    border-top:none;
+  }
+  #tab-list{
+    .ivu-tabs-bar{
+      margin: 0;
+    }
+    .ivu-tabs-nav .ivu-tabs-tab:hover{
+      color: @primary-color;
+    }
+    .ivu-tabs-nav {
+      .ivu-tabs-tab {
+        display: inline-block;
+        height: 100%;
+        padding: 6px 14px 6px 40px;
+        width: 136px;
+        margin: 12px 0;
+        font-size: 16px;
+        border-right: 1px solid #ccc;
+      }
+      .ivu-tabs-tab:nth-child(2) {
+        padding-left: 54px;
+        background: url("@{images}/tag1.png") no-repeat 10px center;
+      }
+      .ivu-tabs-tab:nth-child(3) {
+        padding-left: 66px;
+        width: 140px;
+        background: url("@{images}/tag2.png") no-repeat 22px center;
+      }
+      .ivu-tabs-ink-bar{
+        left: -17px;
+        width: 140px;
+      }
+    }
+    .ivu-tabs-bar{
+      border-bottom: none;
+    }
+    .ivu-rate-star-half .ivu-rate-star-content:before, .ivu-rate-star-full:before{
+      color: @primary-color;
+    }
+    .ivu-btn-group button{
+      margin-right: 20px;
+    }
+    .ivu-page{
+      margin: 20px auto 0;
+      padding-bottom: 40px;
+    }
+    .tab-list-pane{
+      padding-bottom: 40px;
+    }
+    .ivu-table {
+      td.table-info-columnfirst{
+        width: 180px;
+      }
+      td.table-info-columnend{
+        width: 200px;
+      }
+      .table-font{
+        padding-bottom: 20px;
+        overflow: hidden;
+        float: left;
+        display: block;
+        width: 100%;
+        height: 24px;
+      }
+    }
+  }
+}
+
+.title {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0px;
+  background: #f7f7f7;
+  p{
+    font-size: 14px;
+  }
+}
+.center{
+  width: 1200px;
+  margin: 0 auto;
+}

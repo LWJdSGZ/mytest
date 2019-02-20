@@ -1,0 +1,92 @@
+@import '~iview/src/styles/index.less';
+@primary-color: #ff304a;
+@bgcolor: #f2f2f1;
+@hovercolor:#ce1515;
+
+#comment{
+  margin: 0 auto;
+  .commentServiceName{
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    padding:20px 0;
+  }
+  .instanceInfo-bg{
+    width: 100%;
+    background: #ffffff;
+  }
+  .instanceInfo{
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    padding:20px 0;
+    .instanceServiceName{
+      display: inline-block;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .instanceCreateTime{
+      font-size: 14px;
+      color: #999999;
+    }
+    .costDetail{
+      display: inline-block;
+      line-height: 60px;
+      .costDetail-price{
+        color: #dc1c1f;
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+  }
+  .comment-bg{
+    background: #fafafa;
+    padding-bottom: 40px;
+    .comment-area{
+      width: 1200px;
+      margin: 0 auto;
+      .commentInfoScore{
+        margin: 40px 0 20px;
+        font-size: 14px;
+      }
+      .commentHelp{
+        margin: 40px 0 20px;
+        font-size: 14px;
+        text-align: right;
+      }
+      .commentText{
+        margin-bottom:20px ;
+        textarea{
+          padding:10px 16px;
+        }
+      }
+    }
+    .add-pic{
+      margin-bottom: 20px;
+    }
+    .comment-btn{
+      text-align: center;
+    }
+    .ivu-rate-star-half .ivu-rate-star-content:before, .ivu-rate-star-full:before{
+      color: @primary-color;
+    }
+  }
+  .title {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0px;
+    background: #f7f7f7;
+    p{
+      font-size: 14px;
+    }
+  }
+  .center{
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+#noticeModal .ivu-modal-footer{
+  padding:0;
+  border-top:none;
+}

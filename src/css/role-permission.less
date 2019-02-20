@@ -1,0 +1,187 @@
+@import '~iview/src/styles/index.less';
+@primary-color: #ff304a;
+@bgcolor: #f2f2f1;
+@hovercolor:#ce1515;
+/*面包屑导航*/
+.crumbs-bg{
+  width: 100%;
+  background: @bgcolor;
+  overflow: hidden;
+}
+.crumbs-center {
+  line-height: 50px;
+  font-size: 14px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: block;
+  margin-left: 20px;
+}
+.red-alert{
+  color: @primary-color;
+  padding-left: 20px;
+}
+.role-recovery{
+  line-height: 40px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+.role-permisson{
+  background: #fff;
+  .role-permission-con{
+    padding:30px 40px;
+  }
+  .role-name-label{
+    text-align: center;
+  }
+  .role-desc-label{
+    text-align: center;
+  }
+  .role-recovery-btn{
+    width: 1150px;
+    text-align: right;
+    margin-right: 80px;
+    .ivu-btn{
+
+    }
+  }
+  .role-auth-table{
+    margin-top: 40px;
+    padding-top: 40px;
+    .role-auth{
+      line-height: 40px;
+      float: left;
+      text-align: center;
+    }
+    .role-menu{
+      background: @bgcolor;
+      line-height: 40px;
+      border:1px solid #ccc;
+      border-right: none;
+      padding-left: 20px;
+      text-align: center;
+      font-weight: bold;
+      width: 600px;
+      float: left;
+    }
+    .role-operation{
+      background: @bgcolor;
+      line-height: 40px;
+      border:1px solid #ccc;
+      padding-left: 20px;
+      text-align: center;
+      font-weight: bold;
+      width: 200px;
+      float: left;
+      position: relative;
+      .role-recover-btn{
+        background: @primary-color;
+        border: 1px solid #ff304a;
+        position: absolute;
+        right: 0;
+        top:-50px;
+      }
+    }
+  }
+  #permission-tree{
+    margin-top: 5px;
+    margin-left: -15px;
+    .ivu-tree ul li{
+      margin:0;
+      position: relative;
+      margin-top: -6px;
+    }
+
+    .ivu-tree-arrow{
+      line-height: 38px;
+      vertical-align: top;
+      position: relative;
+      left:20px;
+    }
+    .ivu-tree li ul{
+      padding:0;
+    }
+    .ivu-tree>ul>li>ul>li>span.table>span.table-tree-menu{
+      padding-left: 40px;
+    }
+    .ivu-tree>ul>li>ul>li>span.ivu-tree-arrow{
+      left:40px;
+    }
+    .ivu-tree>ul>li>ul>li>ul>li>span.table>span.table-tree-menu{
+      padding-left: 60px;
+    }
+    .ivu-tree>ul>li>ul>li>ul>li>span.ivu-tree-arrow{
+      left:60px;
+    }
+    .ivu-tree>ul>li>ul>li>ul>li>ul>li>span.table>span.table-tree-menu{
+      padding-left: 80px;
+    }
+    .ivu-tree>ul>li>ul>li>ul>li>ul>li>span.ivu-tree-arrow{
+      left:80px;
+    }
+    .ivu-tree>ul>li>ul>li>ul>li>ul>li>ul>li>span.table>span.table-tree-menu{
+      padding-left: 100px;
+    }
+    .ivu-tree>ul>li>ul>li>ul>li>ul>li>ul>li>span.ivu-tree-arrow{
+      left:100px;
+    }
+
+    .table{
+      display: inline-block;
+      width: 100%;
+      .table-tree-menu{
+        border:1px solid #ccc;
+        width: 600px;
+        height: 100%;
+        padding:10px 20px;
+        float: left;
+        display: block;
+      }
+      .table-tree-operation{
+        border:1px solid #ccc;
+        border-left: none;
+        display: inline-block;
+        float: left;
+        width: 200px;
+        height: 100%;
+        padding:10px 20px;
+        text-align: center;
+        background: #fff;
+      }
+    }
+    .ivu-checkbox-wrapper{
+      line-height: 38px;
+      vertical-align: top;
+      position: absolute;
+      left: 710px;
+      z-index: 200;
+    }
+  }
+  .primary-con{
+    text-align: center;
+    margin-top: 40px;
+    .ivu-btn-primary{
+      background: @primary-color;
+      border: 1px solid #ff304a;
+    }
+  }
+}
+
+/*按钮颜色初始化*/
+.ivu-btn:hover {
+  color: @primary-color;
+  background-color: #fff;
+  border-color: @primary-color;
+}
+.ivu-btn-primary{
+  color: #fff;
+  background-color: @primary-color;
+  border-color: @primary-color;
+}
+.ivu-checkbox-checked .ivu-checkbox-inner {
+  border-color: @primary-color;
+  background-color: @primary-color;
+}
+.ivu-checkbox-indeterminate .ivu-checkbox-inner {
+  background-color: @primary-color;
+  border-color: @primary-color;
+}
