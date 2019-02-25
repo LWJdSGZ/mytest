@@ -1,12 +1,12 @@
 <style lang="less">
-    @import "../css/header.less";
+    @import "../../css/header.less";
 </style>
 <template>
     <Menu class="menu" mode="horizontal" active-name="1">
         <Row class="center">
             <Col span="3">
-                <a href="../">
-                    <img class="logo" src="../assets/logo.png">
+                <a href="../../">
+                    <!--<img class="logo" src="../assets/logo.png">-->
                 </a>
             </Col>
             <Col span="3">

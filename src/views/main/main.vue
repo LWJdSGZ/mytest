@@ -1,10 +1,9 @@
 <template>
   <div class="layout">
-    <Layout>
-      <Header>
-        <span class="sys-name">租户管理控制台</span>
-      </Header>
-      <Layout>
+    <!--<Layout>-->
+      <main-head></main-head>
+      <router-view></router-view>
+      <!--<Layout>
         <Sider hide-trigger :style="{background: '#fff', overflow: 'auto'}">
           <Menu theme="light" :open-names="['home']" width="auto">
             <Submenu name="home">
@@ -28,9 +27,37 @@
           </Menu>
         </Sider>
         <Layout>
-            <router-view></router-view>
+
         </Layout>
-      </Layout>
-    </Layout>
+      </Layout>-->
+    <!--</Layout>-->
   </div>
 </template>
+<script>
+  import headMenu from "com/public/header.vue"
+  import comment from '../food/comment/comment/comment.vue'
+  export default {
+    data() {
+      return {};
+    },
+
+    created() {
+
+    },
+
+    mounted() {
+
+    },
+
+    methods: {},
+
+    computed: {},
+
+    watch: {},
+
+    components: {
+        'main-comment': comment,
+        'main-head': headMenu,
+    },
+  }
+</script>

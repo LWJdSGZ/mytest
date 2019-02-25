@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Main from '@/views/main/main'
+import Console from './console.js'
 
 Vue.use(Router)
 
@@ -8,13 +9,15 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: 'home',
+      redirect: 'index',
       name: 'main',
       component: Main,
       children: [
-        { path: 'home', name: 'home', component: (resolve) => { require(['@/views/home/home.vue'], resolve); } }
+        { path: 'index', name: 'index', component: (resolve) => { require(['@/views/home/home.vue'], resolve); } }
       ]
     },
+    ...Console,
+
     {
       path: '/comment',
       name: '/comment',
@@ -34,6 +37,6 @@ export default new Router({
         { path: 'role-users', name: 'role-users', component: (resolve) => { require(['@/views/rbac/role-users.vue'], resolve); } },
         { path: 'role-authorizations', name: 'role-authorizations', component: (resolve) => { require(['@/views/rbac/role-authorizations.vue'], resolve); } }
       ]
-    }
+    },
   ]
 })

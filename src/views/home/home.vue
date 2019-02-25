@@ -1,5 +1,5 @@
 <template>
   <div>
-    租户管理控制台
+    home页
   </div>
 </template>

@@ -27,7 +27,14 @@
       ],
       "plugins": [
         "transform-vue-jsx",
-        "istanbul"
+        "istanbul",
+        [
+          "import",
+          {
+            "libraryName": "iview",
+            "libraryDirectory": "src/components"
+          }
+        ]
       ]
     }
   }
