@@ -1,9 +1,18 @@
 <template>
 
     <div class="console-index">
-      112121
         <Row style="width:100%">
+          <i-col span="10">
+            121
+          </i-col>
+          <i-col span="7">
+            121
 
+          </i-col>
+          <i-col span="7">
+            121
+
+          </i-col>
             <!--<i-col span="10">
                 <ci-my-service-instance></ci-my-service-instance>
             </i-col>

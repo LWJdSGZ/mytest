@@ -9,15 +9,26 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: 'index',
+      // redirect: 'console',
       name: 'main',
       component: Main,
       children: [
-        { path: 'index', name: 'index', component: (resolve) => { require(['@/views/home/home.vue'], resolve); } }
+        { path: 'main', name: 'main', component: (resolve) => { require(['@/views/home/home.vue'], resolve); } }
       ]
     },
-    ...Console,
-
+    // ...Console,
+    {
+      path: '/console',
+      name: '/console',
+      component:  (resolve) => { require(['@/views/console/main.vue'], resolve); },
+      children: [
+        {
+          path: 'index',
+          name: 'consoleindex',
+          component: (resolve) => { require(['@/views/console/index/index.vue'], resolve); }
+          },
+      ]
+    },
     {
       path: '/comment',
       name: '/comment',

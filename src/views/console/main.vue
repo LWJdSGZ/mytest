@@ -1,4 +1,4 @@
-<style scoped lang="scss">
+<!--<style scoped lang="scss">
     .console-index {
         display: flex;
         flex-direction: row;
@@ -23,21 +23,31 @@
             }
         }
     }
-</style>
+</style>-->
 
 <template>
     <div class="console-index">
-      2121
-        <!--<ci-console-head></ci-console-head>
-        <ci-console-menu></ci-console-menu>-->
+      21212
+        <ci-console-head></ci-console-head>
+        <!--<ci-console-menu></ci-console-menu>-->
         <div class="content">
             <router-view/>
         </div>
 
     </div>
 </template>
-
 <script>
+  import consoleHead from "com/public/headerconsole.vue"
+  export default {
+    data() {
+      return {}
+    },
+    components: {
+      "ci-console-head": consoleHead,
+    },
+  }
+</script>
+<!--<script>
     //租户平台首页 axl
    /* import consoleHead from "com/public/headConsole.vue"
     import consoleMenu from "com/public/menu/console-menu.vue"*/
@@ -55,4 +65,4 @@
 
         },
     }
-</script>
+</script>-->
