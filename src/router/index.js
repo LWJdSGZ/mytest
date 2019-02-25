@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Main from '@/views/main/main'
-import Console from '@/router/console.js'
+import Console from './console.js'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
+  mode: 'history',//'hash',history
   routes: [
     {
       path: '/',
@@ -17,6 +18,7 @@ export default new Router({
       ]
     },
     ...Console,
+
     {
       path: '/comment',
       name: '/comment',
@@ -39,3 +41,4 @@ export default new Router({
     },
   ]
 })
+export default router

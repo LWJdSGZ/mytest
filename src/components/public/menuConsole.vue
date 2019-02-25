@@ -22,15 +22,8 @@
                     </MenuGroup>
                 </Submenu>
             </Col>
-            <Col class="menuoption" span="2" offset="6">
-                <a  href="">
-                    产品中心
-                </a>
-            </Col>
             <Col class="menuoption" span="2">
-                <a href="">
-                服务商
-                </a>
+                <router-link to="/console/index">控制台首页</router-link>
             </Col>
             <Col class="menuoption" span="2">
                 <a href="">

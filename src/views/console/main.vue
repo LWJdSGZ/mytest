@@ -1,8 +1,7 @@
 <template>
     <div class="console-index">
-      21212
-        <ci-console-head></ci-console-head>
-        <!--<ci-console-menu></ci-console-menu>-->
+        <console-head></console-head>
+        <console-menu></console-menu>
         <div class="content">
             <router-view/>
         </div>
@@ -10,13 +9,15 @@
     </div>
 </template>
 <script>
-  import consoleHead from "com/public/headerconsole.vue"
+  import consoleHead from "com/public/headerConsole.vue"
+  import consoleMenu from "com/public/menuConsole.vue"
   export default {
     data() {
       return {}
     },
     components: {
-      "ci-console-head": consoleHead,
+      "console-head": consoleHead,
+      "console-menu": consoleMenu,
     },
   }
 </script>
