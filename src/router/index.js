@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Main from '@/views/main/main'
-import Console from './console.js'
+import Console from '@/router/console.js'
 
 Vue.use(Router)
 
@@ -16,19 +16,7 @@ export default new Router({
         { path: 'main', name: 'main', component: (resolve) => { require(['@/views/home/home.vue'], resolve); } }
       ]
     },
-    // ...Console,
-    {
-      path: '/console',
-      name: '/console',
-      component:  (resolve) => { require(['@/views/console/main.vue'], resolve); },
-      children: [
-        {
-          path: 'index',
-          name: 'consoleindex',
-          component: (resolve) => { require(['@/views/console/index/index.vue'], resolve); }
-          },
-      ]
-    },
+    ...Console,
     {
       path: '/comment',
       name: '/comment',
