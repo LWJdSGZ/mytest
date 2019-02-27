@@ -7,7 +7,7 @@ export default [
     children: [
       {
         path: 'index',
-        name: 'index',
+        name: 'consoleIndex',
         component: (resolve) => { require(['@/views/console/index/index.vue'], resolve); }
       },
     ]

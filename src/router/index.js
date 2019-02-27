@@ -11,7 +11,7 @@ const router = new Router({
     {
       path: '/',
       redirect: 'index',
-      name: 'index',
+      name: 'homeIndex',
       component: Main,
       children: [
         { path: 'index', name: 'index', component: (resolve) => { require(['@/views/home/home.vue'], resolve); } }
@@ -41,4 +41,12 @@ const router = new Router({
     },
   ]
 })
+/*router.beforeEach((to, from, next) => {
+  console.log("212121",to, from, next)
+  console.log("location",location)
+})
+function cloudAllianceLogin(to, from, next) {
+  console.log("212121",to, from, next)
+  console.log("location",location)
+}*/
 export default router
