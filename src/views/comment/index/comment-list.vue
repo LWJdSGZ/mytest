@@ -81,5 +81,5 @@ export default {
 }
 </script>
 <style lang="less">
-  @import '../../../../css/comment-instance-list.less';
+  @import '../../../css/comment-instance-list.less';
 </style>

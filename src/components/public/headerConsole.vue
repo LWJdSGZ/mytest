@@ -1,27 +1,17 @@
 <style lang="less">
-    @import "../../css/header.less";
+  @import "../../css/header.less";
 </style>
 <template>
-  <Sider hide-trigger :style="{background: '#fff', overflow: 'auto'}">
-    <Menu theme="light" :open-names="['home']" width="auto">
-      <Submenu name="home">
-        <template slot="title">
-          <Icon type="ios-paper"></Icon>
-          <span>主页</span>
-        </template>
-        <router-link to="/">
-          <MenuItem name="home1">主页</MenuItem>
-        </router-link>
-      </Submenu>
-      <Submenu name="comment">
-        <template slot="title">
-          <Icon type="ios-paper"></Icon>
-          <span>评价</span>
-        </template>
-        <router-link to="/comment/index/comment-list">
-          <MenuItem name="supplier-list">评价管理列表</MenuItem>
-        </router-link>
-      </Submenu>
-    </Menu>
-  </Sider>
+  <Menu class="menu" mode="horizontal" active-name="1">
+    <Row class="center">
+      <Col class="menuoption" span="4">
+        <router-link to="/console/index">控制台首页</router-link>
+      </Col>
+      <Col class="menuoption" span="4" offset="16">
+        <router-link to="/index">回首页</router-link>
+      </Col>
+
+    </Row>
+  </Menu>
 </template>
+

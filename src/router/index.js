@@ -10,11 +10,11 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      // redirect: 'console',
-      name: 'main',
+      redirect: 'index',
+      name: 'index',
       component: Main,
       children: [
-        { path: 'main', name: 'main', component: (resolve) => { require(['@/views/home/home.vue'], resolve); } }
+        { path: 'index', name: 'index', component: (resolve) => { require(['@/views/home/home.vue'], resolve); } }
       ]
     },
     ...Console,
@@ -24,8 +24,8 @@ const router = new Router({
       name: '/comment',
       component: Main,
       children: [
-        { path: 'index/comment-list', name: 'comment-list', component: (resolve) => { require(['@/views/food/comment/index/comment-list.vue'], resolve); } },
-        { path: 'comment/comment', name: 'comment', component: (resolve) => { require(['@/views/food/comment/comment/comment.vue'], resolve); } }
+        { path: 'index/comment-list', name: 'comment-list', component: (resolve) => { require(['@/views/comment/index/comment-list.vue'], resolve); } },
+        { path: 'comment/comment', name: 'comment', component: (resolve) => { require(['@/views/comment/comment/comment.vue'], resolve); } }
       ]
     },
     {

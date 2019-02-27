@@ -243,5 +243,5 @@ export default {
 </script>
 
 <style lang="less">
-  @import '../../../../css/comment.less';
+  @import '../../../css/comment.less';
 </style>
