@@ -1,42 +1,43 @@
 <template>
-
-    <div class="console-index">
-        <Row style="width:100%">
-          <i-col span="10">
-            121
-          </i-col>
-          <i-col span="7">
-            121
-          </i-col>
-          <i-col span="7">
-            121
-          </i-col>
-
-        </Row>
-
+  <div class="wrapper">
+    <span>echarts测试数据</span>
+    <div class="charts">
+      <div id="myChart" :style="{width:'300px',height:'300px'}"></div>
     </div>
-
+  </div>
 </template>
 
 <script>
-
-
-export default {
-  data() {
-      return {};
-  },
-  components: {
-
-  },
-    methods: {}
-};
-
+  export default {
+    name: 'hello',
+    data () {
+      return {
+        msg: 'Welcome to Your Vue.js App'
+      }
+    },
+    mounted(){
+      this.drawLine();
+    },
+    methods: {
+      drawLine(){
+        // 基于准备好的dom，初始化echarts实例
+        let myChart = this.$echarts.init(document.getElementById('myChart'))
+        // 绘制图表
+        myChart.setOption({
+          title: { text: '在Vue中使用echarts' },
+          tooltip: {},
+          xAxis: {
+            data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+          },
+          yAxis: {},
+          series: [{
+            name: '销量',
+            type: 'bar',
+            data: [5, 20, 36, 10, 10, 20]
+          }]
+        });
+      }
+    }
+  }
 </script>
 
-<style scoped>
-.console-index{
-  width: 100%;
-  min-height: 800px;
-
-}
-</style>

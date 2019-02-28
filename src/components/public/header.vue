@@ -1,5 +1,18 @@
 <style lang="less">
-    @import "../../css/header.less";
+  @bgcolor: #f2f2f1;
+  @hovercolor:#ce1515;
+  .head-console {
+    height: 65px;
+    line-height: 65px;
+    width: 100%;
+    background: #424041;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: hidden;
+    color: #ffffff;
+  }
 </style>
 <template>
     <Menu class="menu" mode="horizontal" active-name="1">
@@ -23,7 +36,7 @@
                 </Submenu>
             </Col>
 
-            <Col class="menuoption" span="4" offset="16">
+            <Col class="menuoption" span="2" offset="16">
                 <router-link to="/console/index">控制台</router-link>
             </Col>
         </Row>

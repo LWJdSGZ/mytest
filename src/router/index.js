@@ -41,12 +41,11 @@ const router = new Router({
     },
   ]
 })
-/*router.beforeEach((to, from, next) => {
-  console.log("212121",to, from, next)
-  console.log("location",location)
+router.beforeEach((to, from, next) => {
+  console.log("path",to, from)
+  /*console.log("location",location)*/
+  document.title = "云首页"
+  next();
 })
-function cloudAllianceLogin(to, from, next) {
-  console.log("212121",to, from, next)
-  console.log("location",location)
-}*/
+
 export default router
