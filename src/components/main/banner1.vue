@@ -1,54 +1,54 @@
 
 <style  scoped lang="scss">
-.banner1 {
-  font-size: 14px;
-  color: rgba(51, 51, 51, 0.6);
-  background-color: #ffffff;
+  .banner1 {
+    font-size: 14px;
+    color: rgba(51, 51, 51, 0.6);
+    background-color: #ffffff;
 
-  width: 1200px;
-  margin: auto;
-  height: 156px;
-  .banner1-row {
-    height: 100%;
+    width: 1200px;
+    margin: auto;
+    height: 156px;
+    .banner1-row {
+      height: 100%;
 
-    .banner1-col {
-    height: 100%;
-
-      .group{
-         cursor:pointer;
-        text-align: center;
-        display: block;
-        color: rgba(51, 51, 51, 0.6);
+      .banner1-col {
         height: 100%;
-        display: flex;
-        justify-content:center;
-        align-items:Center;
-        div{
+
+        .group{
+          cursor:pointer;
+          text-align: center;
+          display: block;
+          color: rgba(51, 51, 51, 0.6);
+          height: 100%;
+          display: flex;
+          justify-content:center;
+          align-items:Center;
+          div{
             text-align: left;
             display: inline-block;
             margin-left: 20px;
-             vertical-align: middle;
+            vertical-align: middle;
 
-             .title {
-                font-size: 16px;
-                 vertical-align: middle;
-                color: rgb(51, 51, 51);
-                font-weight: bold;
-                }
+            .title {
+              font-size: 16px;
+              vertical-align: middle;
+              color: rgb(51, 51, 51);
+              font-weight: bold;
+            }
 
+          }
+        }
+
+        &:hover  {
+          background-color: rgb(244, 252, 255);
+          .group div .title{
+            color: rgb(205, 19, 27);
+          }
         }
       }
 
-       &:hover  {
-        background-color: rgb(244, 252, 255);
-        .group div .title{
-                color: rgb(205, 19, 27);
-        }
-        }
     }
-
   }
-}
 </style>
 <template>
  <div class="banner1">

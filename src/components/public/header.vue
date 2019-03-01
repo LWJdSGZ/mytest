@@ -1,18 +1,4 @@
 <style lang="less">
-  @bgcolor: #f2f2f1;
-  @hovercolor:#ce1515;
-  .head-console {
-    height: 65px;
-    line-height: 65px;
-    width: 100%;
-    background: #424041;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    overflow: hidden;
-    color: #ffffff;
-  }
 </style>
 <template>
     <Menu class="menu" mode="horizontal" active-name="1">
