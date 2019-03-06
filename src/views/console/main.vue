@@ -26,7 +26,7 @@
 <template>
     <div class="console-index">
         <console-head></console-head>
-        <!--<console-menu></console-menu>-->
+        <console-menu></console-menu>
         <div class="content">
             <router-view/>
         </div>
