@@ -10,6 +10,12 @@ export default [
         name: 'consoleIndex',
         component: (resolve) => { require(['@/views/console/index/index.vue'], resolve); }
       },
+      {
+        // $route.params.id
+        path:'commen/:id',
+        name: 'commen',
+        component: (resolve) => { require(['@/views/console/index/commen.vue'], resolve);}
+      },
     ]
   },
 ]
